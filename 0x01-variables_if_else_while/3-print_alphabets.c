@@ -8,10 +8,13 @@ int main(void)
 	char henry = 'a';
 
 	char hamza = 'A';
-		while (henry <= 'z' && hamza <= 'Z')
+for (i = 0; henry <= 'a'; i++)
 {
-	putchar(henry);
-	henry++;
+	if (henry <= 'z'){
+		putchar(henry);
+	}
+	while (hamza <= 'Z')
+{
 	putchar(hamza);
 	hamza++;
 	putchar(10);
