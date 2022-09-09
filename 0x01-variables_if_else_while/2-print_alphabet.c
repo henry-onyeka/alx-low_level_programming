@@ -5,11 +5,11 @@
 */
 int main(void)
 {
-	char henry="a";
-	while (henry <= z)
+	char ch = 'a';
+	while (ch <= 'z')
 {
-	putchar("%c ",henry);
-	henry++;
+	putchar("%c ",ch);
+	ch++;
 }
 	putchar("\n");
 	return (0);
