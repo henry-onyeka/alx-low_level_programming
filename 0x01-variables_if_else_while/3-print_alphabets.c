@@ -8,13 +8,13 @@ int main(void)
 	char henry = 'a';
 
 	char hamza = 'A';
-		while (henry <= z && hamza <= Z)
+		while (henry <= 'z' && hamza <= 'Z')
 {
 	putchar(henry);
 	henry++;
 	putchar(hamza);
 	hamza++;
-	putchar("\n"10);
+	putchar(10);
 }
 return (0);
 }
