@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
- * main - betty don ,ad , you dey suffer person too much ogun go kill you
+ * main - prints the alphabet.
  *
  * Return: Always 0 (success)
 */
