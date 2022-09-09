@@ -15,7 +15,8 @@ for (henry = 'a' ; henry <= 'z'; henry++)
 	for (hamza = 'A' ; hamza <= 'Z'; hamza++)
 {
 	putchar(hamza);
-	putchar(10);
 }
+	putchar('\n');
+
 return (0);
 }
