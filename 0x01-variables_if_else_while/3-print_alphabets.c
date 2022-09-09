@@ -10,9 +10,10 @@ int main(void)
 	char hamza = 'A';
 		while (henry <= z && hamza <= Z)
 {
-	putchar(henry, hamza);
-	henry++
-	hamza++
+	putchar(henry);
+	henry++;
+	putchar(hamza);
+	hamza++;
 	putchar("\n"10);
 }
 return (0);
