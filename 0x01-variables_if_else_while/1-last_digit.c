@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /*
-*main: print last digit in random number
+* main - print last digit in random number
 *Description: print last digit in random number
 *Return: always 0 (success)
 */
