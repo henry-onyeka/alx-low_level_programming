@@ -1,14 +1,15 @@
 #include <stdio.h>
 /**
- * main - make i count one two three like nursery school pikin
+ * main - count 1 2 3  , as par nursery svchool pikin wey i be na
  * Return: Always 0 (success)
  */
 int main(void)
 {
-	int num;
-	for (num = 0 ;num <= 10; num++){
-		putchar(num);
+	int pad;
+	for (pad = 0; pad <= 10; pad++)
+	{
+		printf("%d\n", pad);
 	}
-	putchar(\n);
 	return (0);
 }
+
