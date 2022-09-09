@@ -1,15 +1,9 @@
 #include <stdio.h>
-
-
-/**
+/*
+ * main - betty don ,ad , you dey suffer person too much ogun go kill you
  *
- *  * main - Prints the alphabet.
- *
- *   *
- *
- *    * Return: Always 0 (Success)
- *
- *     */
+ * Return: Always 0 (success)
+*/
 int main(void)
 {
 	char henry = 'a';
