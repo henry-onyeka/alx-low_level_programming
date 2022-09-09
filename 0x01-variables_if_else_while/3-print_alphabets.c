@@ -1,7 +1,8 @@
 #include <stdio.h>
 /*
- * main - prints the alphabet.
+ * main - prints the alphabet.betty buhari is your portion
  *
+ *Description: betty is a witch i hate her, na ogun go kill you
  * Return: Always 0 (success)
 */
 int main(void)
