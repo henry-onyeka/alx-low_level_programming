@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
-* main - this betty dey mad i swear, just dey suffeer man pikin anyhow
+*main - this betty dey mad i swear, just dey suffeer man pikin anyhow
 * Return: always 0 (success)
 */
 int main(void)
