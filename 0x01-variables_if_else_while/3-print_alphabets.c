@@ -7,8 +7,8 @@ int main(void)
 {
 	char henry = 'a';
 
-	char hamza = 'A'
-		while (henry < z && hamza < Z)
+	char hamza = 'A';
+		while (henry <= z && hamza <= Z)
 {
 	putchar(henry, hamza);
 	henry++
