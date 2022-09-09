@@ -12,10 +12,9 @@ for (henry = 'a' ; henry <= 'z'; henry++)
 {
 	putchar(henry);
 }
-	while (hamza <= 'Z')
+	for (hamza = 'A' ; hamza <= 'Z'; hamza++)
 {
 	putchar(hamza);
-	hamza++;
 	putchar(10);
 }
 return (0);
