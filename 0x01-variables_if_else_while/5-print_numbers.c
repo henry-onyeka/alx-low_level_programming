@@ -8,8 +8,9 @@ int main(void)
 	int pad;
 	for (pad = 0; pad <= 10; pad++)
 	{
-		printf("%d\n", pad);
+		printf("%d", pad);
 	}
+	printf("\n");
 	return (0);
 }
 
