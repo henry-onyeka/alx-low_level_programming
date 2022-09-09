@@ -1,8 +1,15 @@
 #include <stdio.h>
-/*
-*main - this betty dey mad i swear, just dey suffeer man pikin anyhow
-* Return: always 0 (success)
-*/
+
+
+/**
+ *
+ *  * main - Prints the alphabet.
+ *
+ *   *
+ *
+ *    * Return: Always 0 (Success)
+ *
+ *     */
 int main(void)
 {
 	char henry = 'a';
