@@ -7,7 +7,7 @@ int main(void)
 {
 	int pad;
 
-	for (pad = 0; pad <= 10; pad++)
+	for (pad = 0; pad <= 9; pad++)
 	{
 		printf("%d", pad);
 	}
