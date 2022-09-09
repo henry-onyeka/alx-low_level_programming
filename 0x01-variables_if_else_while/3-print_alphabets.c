@@ -1,7 +1,7 @@
 #include <stdio.h>
-/*
- *
- * Return: Always 0 (success)
+/**
+* main - put am for betty body wotowoto
+* Return: Always 0 (success)
 */
 int main(void)
 {
