@@ -8,10 +8,9 @@ int main(void)
 	char henry = 'a';
 
 	char hamza = 'A';
-while (henry <= 'a')
+for (henry = 'a' ; henry <= 'z'; henry++)
 {
 	putchar(henry);
-henry++;
 }
 	while (hamza <= 'Z')
 {
