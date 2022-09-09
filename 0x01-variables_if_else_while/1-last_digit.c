@@ -2,8 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 /*
-*main: print the last digit of the number stored in the variable n
-*Description: print the last digit of the nuber
+*main: print the last digit in random number
+*Description: print the last digit in random number
 *Return: always 0 (success)
 */
 int main(void)
@@ -21,7 +21,7 @@ if (final > 5)
 }
 	else if (final < 6 && final != 0)
 {
-	printf("Last digit of %d is %d and is less than 6 and not 0\n", n, final); 
+	printf("Last digit of %d is %d and is less than 6 and not 0\n", n, final);
 }
 else if (final == 0)
 {			printf("Last digit of %d is %d and is 0\n", n, final);
