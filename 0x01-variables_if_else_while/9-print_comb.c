@@ -13,7 +13,7 @@ int main(void)
 		if (p < 57)
 		{
 		putchar(',');
-		if (p <58)
+		if (p < 57)
 		{
 		putchar(' ');
 		}
