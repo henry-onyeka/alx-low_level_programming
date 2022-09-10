@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	int p = 48;
+	int p;
 
 	while (p <= 58)
 	{
@@ -16,7 +16,6 @@ int main(void)
 		putchar(32);
 
 		}
-		
 		p++;
 	}
 	putchar(10);
