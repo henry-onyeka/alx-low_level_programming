@@ -7,6 +7,8 @@ int main(void)
 {
 	int p;
 
+	p =48;
+
 	while (p <= 58)
 	{
 		putchar(p);
