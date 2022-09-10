@@ -4,9 +4,8 @@
  * Return: Always 0 (success)
  */
 int main(void)
- 
-	{
-	int i;
+ {
+	 int i;
 
 	i = 48;
 
