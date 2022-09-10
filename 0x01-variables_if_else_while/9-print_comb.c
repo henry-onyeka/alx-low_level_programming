@@ -5,14 +5,14 @@
  */
 int main(void)
 {
-	int num =0;
+	int p = 48;
 
-	while (num <= 9)
+	while (num <= 58)
 	{
-		putchar(num);
+		putchar(p);
 		putchar(',');
 		putchar(' ');
-		num++;
+		p++;
 	}
 	putchar(10);
 	return (0);
