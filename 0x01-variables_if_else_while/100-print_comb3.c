@@ -1,40 +1,37 @@
 #include <stdio.h>
 
 /**
- * main - print single digit numbers
- *
- * Description: print single digit numbers with commas
+ * main - Prints numbers between 00 to 89.
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int i, j;
+	int i, e;
 
 	i = 48;
-	j = 48;
+	e = 48;
 
-	while (i < 58)
+	while (e < 58)
 	{
-		j = 48;
-		while (j < 58)
+		i = 48;
+		while (i < 58)
 		{
-			putchar(i);
-			putchar(j);
-
-			if (i < 57 || j < 57)
+			if (e != i && e < i)
 			{
-				putchar(44);
-				putchar(32);
+				putchar(e);
+				putchar(i);
+				if (i == 57 && e == 56)
+				{
+					break;
+				}
+				putchar(',');
+				putchar(' ');
 			}
-			j++;
+			i++;
 		}
-
-		i++;
+		e++;
 	}
-
-	putchar(10);
-
+	putchar('\n');
 	return (0);
 }
