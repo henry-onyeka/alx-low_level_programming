@@ -4,22 +4,23 @@
  * Return: Always 0 (success)
  */
 int main(void)
-{
-	int p;
-
-	p =48;
-
-	while (p <= 58)
+ 
 	{
-		putchar(p);
-		if (p != 57)
-		{
-		putchar(44);
-		putchar(32);
+	int i;
 
+	i = 48;
+
+	while (i < 58)
+	{
+		putchar(i);
+		if (i != 57)
+		{
+			putchar(44);
+			putchar(32);
 		}
-		p++;
+		i++;
 	}
+
 	putchar(10);
 	return (0);
 }
