@@ -7,7 +7,7 @@ int main(void)
 {
 	int p = 48;
 
-	while (num <= 58)
+	while (p <= 58)
 	{
 		putchar(p);
 		putchar(',');
