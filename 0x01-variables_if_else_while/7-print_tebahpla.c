@@ -5,12 +5,11 @@
  */
 int main(void)
 {
-	int alpha;
-
-	for (alpha = 122 ; alpha >= 96; alpha--)
+	int bar;
+	for (bar = 'z' ; bar >= 'a' ; bar--)
 	{
-		putchar(alpha);
+		putchar(bar);
 	}
-	putchar('\b');
+	putchar(10);
 	return (0);
 }
