@@ -15,6 +15,7 @@ void print_alphabet_x10(void)
 	for (i = 0; i <= 10; i++)
 
 {
+	alpha = 'a';
 
 	while (alpha <= 'z')
 
@@ -23,6 +24,6 @@ void print_alphabet_x10(void)
 	alpha++;
 }
 
-}
 _putchar('\n');
+}
 }
