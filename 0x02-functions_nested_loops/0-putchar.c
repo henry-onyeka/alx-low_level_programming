@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - no dey stress me , this main uses the functions declared via the arguments passed
+ * main - uses the functions declared via the arguments passed
 * Description: prints putchar
 * Return: always zero or something else passed
 */
