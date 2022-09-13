@@ -1,5 +1,6 @@
 #include "main.h"
-// main - working with functions
+/* main - working with functions
+*/
 int main(void)
 
 {
