@@ -1,15 +1,15 @@
 #include "main.h"
 /**
- * main - print 
- *print_aphabet - empty return
+* main - prin
+* print_aphabet - empty return
  *Return: empty from the void function
  */
 
 void print_alphabet(void)
 {
-	char alpha = 'a' ;
+	char alpha = 'a';
 
-	while (alpha <= 'z')
+	while ( alpha <= 'z' )
 {
 _putchar(alpha);
 
