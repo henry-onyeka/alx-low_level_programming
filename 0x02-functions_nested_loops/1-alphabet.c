@@ -1,25 +1,21 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
  * main - print 
  *print_aphabet - empty return
  *Return: empty from the void function
  */
-int main ()
-{
-void print_alphabet(void);
-}
+
 void print_alphabet(void)
 {
 	char alpha = 'a' ;
 
 	while (alpha <= 'z')
 {
-putchar(alpha);
+_putchar(alpha);
 
 	alpha++;
 }
-putchar('\n');
+_putchar('\n');
 }
 
 

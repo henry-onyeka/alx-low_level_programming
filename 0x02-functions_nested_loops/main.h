@@ -1,7 +1,7 @@
 #ifndef _main_h_
 #define _main_h_
 
-int _putchar(char);
+int _putchar(char c);
 
 void print_alphabet(void);
 
@@ -27,6 +27,4 @@ void print_to_98(int n);
 
 void print_times_table(int n);
 
-
-
-#endif /* _main_h_*/
+#endif
