@@ -4,7 +4,7 @@
  * @c: is an ascii character
  * Return: always zero
  */
-int int _isalpha(int c)
+int _isalpha(int c)
 
 {
 
