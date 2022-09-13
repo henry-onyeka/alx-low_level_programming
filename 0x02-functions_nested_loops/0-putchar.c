@@ -1,5 +1,8 @@
 #include "main.h"
-/* main - working with functions
+/**
+ * main - no dey stress me , this main uses the functions declared via the arguments passed
+* Description: prints putchar
+* Return: always zero or something else passed
 */
 int main(void)
 
