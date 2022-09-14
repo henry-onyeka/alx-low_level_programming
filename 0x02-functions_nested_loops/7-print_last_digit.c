@@ -11,9 +11,6 @@ int print_last_digit(int last)
 	if (last < 0)
 		va = va * -1;
 	_putchar(va + '0');
-	
-
-
 return (va);
 
 }
