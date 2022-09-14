@@ -5,16 +5,16 @@
  */
 int main(void)
 {
-	int num = 5, sumOf;
+	int num = 0, sumOf;
 
-	while (num <= 1024)
+	while (num < 1024)
 	{		num++;
 	if (num % 5 == 0)
 	{
 		sumOf += num;
 	}
 }
-printf("the total sum of the multiples of 5 is: %d", sumOf);
+printf("%d", sumOf);
 printf("\n");
 return (0);
 }
