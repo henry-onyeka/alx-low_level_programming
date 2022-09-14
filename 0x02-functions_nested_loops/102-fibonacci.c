@@ -14,11 +14,11 @@ void fibonacci(int fib)
 	long int f2 = 2;
 	int i;
 
-	printf("%d", f1);
+	printf("%li", f1);
 
 		for (i = 0; i < fib; i++)
 	{
-		printf(" ,%d", f2);
+		printf(" ,%li", f2);
 
 		printf("\n");
 new = f1 + f2;
