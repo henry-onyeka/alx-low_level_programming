@@ -20,13 +20,13 @@ void fibonacci(int fib)
 	{
 		printf(" ,%li", f2);
 
-		printf("\n");
-new = f1 + f2;
+ew = f1 + f2;
 f1 = f2;
 f2 = new;
 
 	}
-	
+
+	printf("\n");	
 }
 int main(void)
 {
