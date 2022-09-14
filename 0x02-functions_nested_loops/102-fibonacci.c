@@ -1,16 +1,10 @@
 #include <stdio.h>
 /**
  * main - program prints first number and adds it to previous and print again
- *
- * fibonacci - prints iteration of n
- * @fib: collects the argument
- *
- * Description: anyhow
- *  * Return: always 0
+ * Return: always 0
  */
 
-void fibonacci(int fib)
-
+int main(void)
 {
 	long int new;
 	long int f1 = 1;
@@ -19,7 +13,7 @@ void fibonacci(int fib)
 
 	printf("%li", f1);
 
-		for (i = 0; i < fib; i++)
+		for (i = 0; i < 49; i++)
 	{
 		printf(", %li", f2);
 
@@ -30,9 +24,5 @@ f2 = new;
 	}
 
 	printf("\n");
-}
-int main(void)
-{
-	fibonacci(49);
 	return (0);
 }
