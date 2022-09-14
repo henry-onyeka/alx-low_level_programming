@@ -2,8 +2,8 @@
 /**
  * main - printing fibonacci numbers
  * Return: always 0
- * Fibonacci: is a sequential addition of numbers in an orderly manner
- * fib: collects the argument
+ * Fibonacci- is a sequential addition of numbers in an orderly manner
+ * fib - collects the argument
  */
 
 void fibonacci(int fib)
