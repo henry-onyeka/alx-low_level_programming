@@ -1,10 +1,12 @@
 #include <stdio.h>
 /**
+ * main - program prints first number and adds it to previous and print again
+ *
  * fibonacci - prints iteration of n
- * Description: anyhow
- * main - it adds numbers of sum
- * Return: always 0
  * @fib: collects the argument
+ *
+ * Description: anyhow
+ *  * Return: always 0
  */
 
 void fibonacci(int fib)
