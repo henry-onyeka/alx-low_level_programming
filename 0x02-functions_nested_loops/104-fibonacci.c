@@ -5,9 +5,9 @@
  */
 int main(void)
 {
-	int fib, fib1 = 1, fib2 = 2;
+	int i, fib, fib1 = 1, fib2 = 2;
 
-	for (int i = 0; i < 96 ; i++)
+	for (i = 0; i < 96 ; i++)
 	{
 		printf("%d", fib1);
 		while (fib1)
