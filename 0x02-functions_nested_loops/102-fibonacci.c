@@ -14,12 +14,6 @@ void fibonacci(int fib)
 	int f2 = 2;
 	int i;
 
-	if (fib < 1)
-	{
-		return;
-	}
-	else
-{
 	printf("%d", f1);
 
 		for (i = 0; i < fib; i++)
@@ -31,7 +25,7 @@ f1 = f2;
 f2 = new;
 
 	}
-	}
+	
 }
 int main(void)
 {
