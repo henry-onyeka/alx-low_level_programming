@@ -9,7 +9,7 @@ int main(void)
 
 	while (num < 1024)
 	{		num++;
-	if (num % 5 == 0)
+	if (num % 5 == 0 || num % 3 == 0)
 	{
 		sumOf += num;
 	}
