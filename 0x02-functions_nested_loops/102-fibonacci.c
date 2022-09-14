@@ -9,9 +9,9 @@
 void fibonacci(int fib)
 
 {
-	int new;
-	int f1 = 1;
-	int f2 = 2;
+	long int new;
+	long int f1 = 1;
+	long int f2 = 2;
 	int i;
 
 	printf("%d", f1);
@@ -20,6 +20,7 @@ void fibonacci(int fib)
 	{
 		printf(" ,%d", f2);
 
+		printf("\n");
 new = f1 + f2;
 f1 = f2;
 f2 = new;
@@ -30,6 +31,5 @@ f2 = new;
 int main(void)
 {
 	fibonacci(49);
-	printf("\n");
 	return (0);
 }
