@@ -35,7 +35,7 @@ f2 = new;
 }
 int main(void)
 {
-	fibonacci(48);
+	fibonacci(4999999999);
 	printf("\n");
 	return (0);
 }
