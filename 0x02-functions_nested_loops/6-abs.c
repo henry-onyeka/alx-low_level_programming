@@ -13,16 +13,17 @@
 int _abs(int boy)
 
 {
-	if (boy > 0)
 
-	{
+	if (boy > 0)
+{
 		return (boy);
 	}
 	else if (boy < 0)
 	{
 		return (-boy);
 	}
-	else {
+	else
+	{
 		return (boy);
 	}
 }
