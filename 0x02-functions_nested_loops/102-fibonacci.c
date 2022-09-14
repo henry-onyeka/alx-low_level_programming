@@ -1,9 +1,10 @@
 #include <stdio.h>
 /**
- * main - printing fibonacci numbers
+ * fibonacci - prints iteration of n
+ * Description: anyhow
+ * main - it adds numbers of sum
  * Return: always 0
- * Fibonacci- is a sequential addition of numbers in an orderly manner
- * fib - collects the argument
+ * @fib: collects the argument
  */
 
 void fibonacci(int fib)
@@ -26,7 +27,7 @@ f2 = new;
 
 	}
 
-	printf("\n");	
+	printf("\n");
 }
 int main(void)
 {
