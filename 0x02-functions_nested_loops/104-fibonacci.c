@@ -7,7 +7,7 @@ int main(void)
 {
 	int i, fib, fib1 = 1, fib2 = 2;
 
-	for (i = 0; i < 96 ; i++)
+	for (i = 0; i < 97 ; i++)
 	{
 		printf("%d", fib1);
 		while (fib1)
