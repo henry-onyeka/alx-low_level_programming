@@ -18,7 +18,7 @@ void fibonacci(int fib)
 
 		for (i = 0; i < fib; i++)
 	{
-		printf(" ,%li", f2);
+		printf(", %li", f2);
 
 new = f1 + f2;
 f1 = f2;
