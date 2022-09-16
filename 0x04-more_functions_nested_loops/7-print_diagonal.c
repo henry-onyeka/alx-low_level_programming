@@ -1,18 +1,27 @@
 #include "main.h"
+
 /**
 * print_diagonal - draws line
 * @n: number og\f lines
 *
 * Return: empty
 */
+
 void print_diagonal(int n)
+
 {
-int line = 0, int spaces;
+
+int line = 0;
+int spaces;
 
 if (n > 0)
+
 {
+
 while (line < n)
+
 {
+
 for (spaces = 0; spaces < line; spaces++)
 {
 _putchar(' ');
