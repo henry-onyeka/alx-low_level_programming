@@ -8,9 +8,8 @@ int _strlen(char *s)
 {
 	int p;
 
-	s[] = "my alx peer group are  fantastic one";
-
 	for (p = 0; s[p] != '\0'; ++p)
+
 	{
 	}
 
