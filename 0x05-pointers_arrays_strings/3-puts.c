@@ -6,8 +6,6 @@
  */
 void _puts(char *str)
 {
-	char *str = "my alx peer group is a fantastic one";
-
 	int f;
 
 	while (str[f] != '\0')
