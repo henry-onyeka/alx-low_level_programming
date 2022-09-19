@@ -16,14 +16,14 @@ void rev_string(char *s)
 		i++;
 	}
 	maax = i - 1;
-	half = max / 2;
+	half = maax / 2;
 
 	while (half >= 0)
 	{
-		first = s[max - half];
+		first = s[maax - half];
 		last = s[half];
-		s[hslf] = first;
-		s[max - half] = last;
+		s[half] = first;
+		s[maax - half] = last;
 		half--;
 	}
 }
