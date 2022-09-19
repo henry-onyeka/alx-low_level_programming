@@ -4,7 +4,7 @@
  * @s: is the stribg to be reversed
  * Return: just empty
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int i, maax, half;
 	char first, last;
