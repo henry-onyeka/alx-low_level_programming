@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strncat - adding two strings
+ * _strncat - adding two stringis
  * @dest: initialiesd
  * @src: variables
  * @n: NOther variable
@@ -18,9 +18,12 @@ char *_strncat(char *dest, char *src, int n)
 
 	while (src[b] != n)
 	{
-		dest[a] += src[b];
+
 		if (src[b] == '\0')
+		{
 			b = n;
+		}
+		dest[a] = src[b];
 		b++;
 		a++;
 	}
