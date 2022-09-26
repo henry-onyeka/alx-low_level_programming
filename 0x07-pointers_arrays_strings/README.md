@@ -1,0 +1,1 @@
+memory allocation from pointers
