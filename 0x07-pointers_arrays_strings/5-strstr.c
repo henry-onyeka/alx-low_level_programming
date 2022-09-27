@@ -1,10 +1,11 @@
 #include "main.h"
-#include <stdlib.h>
+#include <stdio.h>
+
 /**
- * _strstr - start
- * @haystack: put am
+ * _strstr - Entry point
+ * @haystack: input
  * @needle: input
- * Return: success
+ * Return: Always 0 (Success)
  */
 char *_strstr(char *haystack, char *needle)
 {
@@ -13,13 +14,21 @@ char *_strstr(char *haystack, char *needle)
 		char *one = haystack;
 		char *two = needle;
 
-
 		while (*one == *two && *two != '\0')
-	{
+		{
 			one++;
 			two++;
 		}
+
 		if (*two == '\0')
 			return (haystack);
-		return (NULL);
 	}
+
+	return (NULL);
+}
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
