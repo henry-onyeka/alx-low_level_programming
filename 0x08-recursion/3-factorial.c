@@ -12,6 +12,7 @@ int factorial(int n)
 	}
 	else
 	{
-		_putchar(n * (factorial(n - 1));
+		_putchar(n * factorial(n - 1));
 }
+return (n);
 }
