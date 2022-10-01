@@ -12,15 +12,15 @@ int main(int argc, char *mult[])
 	int b = atoi(mult[2]);
 	int ans = a * b;
 
-	if (argc <= 2 || argc > 3)
-	{
-		printf("Error\n");
-		return (1);
-	
-	}
-	else
+	if (argc == 3)
+
 	{
 	printf("%d multiplied by %d is = %d\n", a, b, ans);
 	}
+	else
+	{
+		printf("Error\n");
+		return (1);
+}
 	return (0);
 }
