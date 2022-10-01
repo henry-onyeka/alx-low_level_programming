@@ -6,36 +6,25 @@
  * @argv: array of strings
  * Return: returns 0 at success 
  */
-int main(int argc, char * argv[])
-{
-	int i, sumit;
 
-	if (argc > 1)
+int main(int argc, char *argv[])
 {
+	int i, sum = 0;
 
-		
-		for (i = 0; i < argc; i++)
-{
-			if (argv[i])
+	if (argc < 1)
+		return (0);
 
-{
+	for (i = 1; i < argc; i++)
+	{
+		if (!atoi(argv[i]))
+		{
+			printf("%s\n", "Error");
+			return (1);
+		}
+		sum += atoi(argv[i]);
+	}
+	printf("%d\n", sum);
 
-				printf("Error\n");
-				return (1);
-			}
-else
-{
-			sumit += atoi(argv[i]);
-
-}
-}
-printf("%d", sumit);
-return (0);
-}
-else 
-{
-	printf("Error");
-	return (1);
-}
+	return (0);
 }
 
