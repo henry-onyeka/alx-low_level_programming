@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * main - the main function
  * @argv: the firs argument will be passed unto
