@@ -15,7 +15,7 @@ int main(int argc, char *mult[])
 	if (argc == 3)
 
 	{
-	printf("%d multiplied by %d is = %d\n", a, b, ans);
+	printf("%d\n", ans);
 	}
 	else
 	{
