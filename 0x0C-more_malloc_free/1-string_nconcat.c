@@ -34,12 +34,12 @@ for (b = 0; s2[b] != '\0'; b++)
 
 	if (lag == NULL)
 		return (NULL);
-	for (; c < a; c++;)
+	for (c = 0; c < a; c++;)
 {
 		lag[c] = s1[c];
 		
 }
-	for (; d < b; d++)
+	for (d = 0; d < b; d++)
 {
 		lag[c] = s2[d];
 		c++;
