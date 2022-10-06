@@ -10,7 +10,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int pack, d = 0, a, b, c = 0;
+	unsigned int pack, d, a, b, c;
 	char *lag;
 
 	if (s1 == NULL)
