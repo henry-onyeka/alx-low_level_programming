@@ -10,11 +10,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int p;
 	char *pr;
-	int *lag;
+       void	*lag;
 
-	lag = malloc((int *) sizeof(int) * size);
+	lag = malloc(sizeof(int) * size);
 
-	if (nmem == 0 || size == 0)
+	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
