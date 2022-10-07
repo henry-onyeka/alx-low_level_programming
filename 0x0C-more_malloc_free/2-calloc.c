@@ -1,33 +1,28 @@
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
+
 /**
- * _calloc - memorry allocator dynamically
- * @nmemb: value
- * @size: value
- * Return: a pointer
+ * _calloc - allocates memory for an array
+ * @nmemb: number of members
+ * @size: number of bytes
+ * Return: pointer to allocated memory corresponding with the string
  */
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int p;
-	char *pr;
-       void	*lag;
-
-	lag = malloc(sizeof(int) * size);
+	void *arr;
+	unsigned int i;
+	char *k;
 
 	if (nmemb == 0 || size == 0)
-	{
-		return (NULL);
-	}
-
-	if (lag == NULL)
 		return (NULL);
 
-	pr = lag;
+	arr = malloc(size * nmemb);
+	if (arr == NULL)
+		return (NULL);
 
-	for (p = 0; p < nmemb * size; p++)
-{
-	pr[p] = 0;
+	k = arr;
+	for (i = 0; i < nmemb * size; i++)
+		k[i] = 0;
+	return (arr);
 }
-			return (lag);
-}
-
