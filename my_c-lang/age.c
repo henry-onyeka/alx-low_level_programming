@@ -5,18 +5,23 @@ void calc(int year)
 {
 int age, sum, yob;
 int *rec;
-rec = &year;
-sum = year - yob;
+rec = &yob;
+sum = (year - yob);
 
+
+/*
 printf("What year are we in?\n");
 scanf("%d", rec);
+*/
 printf("what year were you born in?\n");
-scanf("%d",&yob);
-printf("You are %d Years old", sum);
-
+scanf("%d",rec);
+printf("You are %d Years old\n", sum);
+printf("the year : %d ,the sum %d, the yob : %d\n",year, sum, yob);
 }
 
-void main()
+int main()
 {
-	calc(year);
+	calc(2022);
+
+return (0);
 }
