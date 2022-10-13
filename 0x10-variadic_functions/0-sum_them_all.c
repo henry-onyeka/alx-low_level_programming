@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdarg.h>
 #include "variadic_functions.h"
 /**
  * sum_them_all - function that sums up all parameter passed into the argument
@@ -11,7 +9,8 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	unsigned int sum = 0, i;
+	unsigned int i;
+int sum = 0,
 
 	va_list valist;
 
