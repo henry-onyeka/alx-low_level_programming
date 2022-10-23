@@ -10,7 +10,7 @@ rec = &yob;
 printf("What year are we in?\n");
 scanf("%d", rec);
 */
-printf("what year were you born in?\n");
+printf("Welcome , what year were you born in?\n");
 scanf("%d",rec);
 sum = year - yob;
 printf("You are %d Years old\n", sum);
