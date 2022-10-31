@@ -22,13 +22,13 @@ return (0);
 if (wr == -1)
 return (0);
 
-wr = write(1, words, rd);
+wr = write(STDOUT_FILENO, words, rd);
 close(op);
 
 
 
 /* read the file */
-rd = read(0, words, letters);
+rd = read(STDIN_FILENO, words, letters);
 if (rd == -1)
 return (0);
 
