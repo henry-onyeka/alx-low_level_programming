@@ -9,7 +9,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 int rd, wr, op;
-char *words[50];
+char words[50];
 
 if (filename == NULL)
 return (0);
@@ -18,19 +18,25 @@ op = open(filename, O_RDONLY);
 if (op == -1)
 return (0);
 
-/* to write to the file */
-if (wr == -1)
-return (0);
-
-wr = write(STDOUT_FILENO, words, rd);
-close(op);
-
 
 
 /* read the file */
 rd = read(STDIN_FILENO, words, letters);
+
 if (rd == -1)
+
 return (0);
+
+/* to write to the file */
+
+if (wr == -1)
+
+return (0);
+
+wr = write(op, words, rd);
+
+close(op);
+
 
 return (wr);
 }
