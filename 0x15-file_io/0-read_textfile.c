@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 /**
 * read_textfile - this function reads a text file and prints it to the POSIX
 * @filename: name of the file
@@ -8,7 +8,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-int rd, wr, op;
+ssize_t  rd, wr, op;
 char words[50];
 
 if (filename == NULL)
