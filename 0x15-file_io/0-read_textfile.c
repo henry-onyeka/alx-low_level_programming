@@ -8,35 +8,28 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-ssize_t  rd, wr, op;
-char words[50];
+int fd;
+ssize_t fdread, fdwrite, fdclose;
+char *space;
 
 if (filename == NULL)
 return (0);
-/* open the file  */
-op = open(filename, O_RDONLY);
-if (op == -1)
-return (0);
-
-
-
-/* read the file */
-rd = read(STDIN_FILENO, words, letters);
-
-if (rd == -1)
-
-return (0);
-
-/* to write to the file */
-
-if (wr == -1)
-
-return (0);
-
-wr = write(op, words, rd);
-
-close(op);
-
-
-return (wr);
+space = malloc(sizeof(char) * letters);
+if (space == NULL)
+{
+return (-1);
+}
+fd = open(filename, O_RDONLY);
+if (fd == -1)
+	return (0);
+fdread = read(fd, space, letters);
+if (fdread == -1)
+	return (-1);
+fdwrite = write(STDOUT_FILENO, space, fdread);
+	if (fdwrite == -1)
+	return (-1);
+	fdclose = close(fd);
+	if (fdclose == -1)
+		return (-1);
+	return (fdread);
 }
