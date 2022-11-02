@@ -9,27 +9,36 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 int fd;
-ssize_t fdread, fdwrite, fdclose;
-char *space;
+ssize_t wr, rd, cl;
+char *bull;
+bull = (char *) malloc(sizeof(char) * letters);
 
+/*read from the file "filename" */
 if (filename == NULL)
+return (-1);
+fd  = open(filename, O_RDWR);
+if (fd == -1)
+{
 return (0);
-space = malloc(sizeof(char) * letters);
-if (space == NULL)
+
+}
+rd = read(fd, bull, letters);
+if (bull == NULL)
+{
+return (0);
+}
+
+if (rd == -1)
+return (-1);
+/*to write to the standard posix*/
+wr = write(1, bull, letters);
+if (wr == -1 || rd != letters)
 {
 return (-1);
 }
-fd = open(filename, O_RDONLY);
-if (fd == -1)
-	return (0);
-fdread = read(fd, space, letters);
-if (fdread == -1)
-	return (-1);
-fdwrite = write(STDOUT_FILENO, space, fdread);
-	if (fdwrite == -1)
-	return (-1);
-	fdclose = close(fd);
-	if (fdclose == -1)
-		return (-1);
-	return (fdread);
+close(fd);
+if (close(fd) == -1)
+
+return (-1);
+return (rd);
 }
