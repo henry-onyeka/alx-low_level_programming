@@ -8,36 +8,30 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 int fd;
-ssize_t wr, rd, cl;
-char *bull;
-bull = (char *) malloc(sizeof(char) * letters);
+ssize_t lenr, lenw;
+char *buffer;
 
-/*read from the file "filename" */
 if (filename == NULL)
 return (0);
-fd  = open(filename, O_RDWR);
+fd = open(filename, O_RDONLY);
 if (fd == -1)
+return (0);
+buffer = malloc(sizeof(char) * letters);
+if (buffer == NULL)
 {
-return (0);
-
-}
-rd = read(fd, bull, letters);
-if (bull == NULL)
-{
-return (0);
-free(bull);
-}
-
-if (rd == -1)
-return (0);
-/*to write to the standard posix*/
-wr = write(STDOUT_FILENO, bull, rd);
-if (wr == -1 && wr != rd)
-{
-return (0);
-}
 close(fd);
-if (close(fd) == -1)
-return (-1);
-return (wr);
+return (0);
+}
+lenr = read(fd, buffer, letters);
+close(fd);
+if (lenr == -1)
+{
+	free(buffer);
+	return (0);
+}
+lenw = write(STDOUT_FILENO, buffer, lenr);
+free(buffer);
+if (lenr != lenw)
+return (0);
+return (lenw);
 }
