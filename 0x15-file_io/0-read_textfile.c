@@ -38,5 +38,4 @@ lenw = write(STDOUT_FILENO, buffer, lenr);
 free(buffer);
 if (lenr != lenw)
 return (0);
-return (lenw);
-}
+return (lenw);}
