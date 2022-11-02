@@ -5,7 +5,6 @@
 * @letters: number of letters
 * Return: the number of letters
 */
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 int fd;
@@ -15,7 +14,7 @@ bull = (char *) malloc(sizeof(char) * letters);
 
 /*read from the file "filename" */
 if (filename == NULL)
-return (-1);
+return (0);
 fd  = open(filename, O_RDWR);
 if (fd == -1)
 {
@@ -26,19 +25,19 @@ rd = read(fd, bull, letters);
 if (bull == NULL)
 {
 return (0);
+free(bull);
 }
 
 if (rd == -1)
-return (-1);
+return (0);
 /*to write to the standard posix*/
-wr = write(1, bull, letters);
-if (wr == -1 || rd != letters)
+wr = write(STDOUT_FILENO, bull, rd);
+if (wr == -1 && wr != rd)
 {
-return (-1);
+return (0);
 }
 close(fd);
 if (close(fd) == -1)
-
 return (-1);
-return (rd);
+return (wr);
 }
